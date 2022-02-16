@@ -12,8 +12,8 @@ class AppBarCustom extends StatelessWidget implements PreferredSizeWidget {
       backgroundColor: Colors.blue[900],
       centerTitle: true,
       elevation: 0,
-      title: Text("Additional Information",style: TextStyle(),),
-      leading: Icon(Icons.arrow_back_outlined,size: 30,),
+      title:const  Text("Additional Information",style: TextStyle(),),
+      leading: const Icon(Icons.arrow_back_outlined,size: 30,),
     );
   }
 
@@ -36,10 +36,10 @@ class ListTileCustom extends StatelessWidget {
       iconColor:  Colors.grey[700],
      dense: true,
       leading: icon,
-      title: Text(titletext,style: TextStyle(fontSize: 16,)),
+      title: Text(titletext,style:const  TextStyle(fontSize: 16,)),
       contentPadding:EdgeInsets.fromLTRB(left, 0, 19, 0),
       horizontalTitleGap: gap??2,
-      visualDensity: VisualDensity(vertical: .3),
+      visualDensity: const VisualDensity(vertical: .3),
       trailing: trailingthing,
     );
   }
